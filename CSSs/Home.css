@@ -1,0 +1,266 @@
+ .conteudo {
+     padding-top: 6%;
+ }
+
+ .LocalHorario {
+     width: 75%;
+     height: 250px;
+     float: left;
+     background-color: rgb(134, 134, 134);
+     margin-bottom: 2%;
+ }
+
+ table {
+     border-collapse: collapse;
+     width: 100%;
+     font-size: 1.5vh;
+     height: 100%;
+ }
+
+ th,
+ td {
+     border: 1px solid #ddd;
+     padding: 5px;
+     text-align: left;
+ }
+
+ th {
+     background-color: #f2f2f2;
+ }
+
+ td {
+     color: white;
+ }
+
+ .LocalLembretes {
+     align-items: center;
+     width: 23%;
+     height: 250px;
+     background-color: rgb(134, 134, 134);
+     float: right;
+ }
+
+ .DivLembretes {
+     background-color: white;
+     margin: 10px;
+     width: 250px;
+     max-width: 250px;
+     height: 90%;
+     text-align: center;
+     border-radius: 15px;
+     padding: 5%;
+     word-wrap: break-word;
+     overflow: auto;
+     text-overflow: ellipsis;
+ }
+
+ .LocalAtividades {
+     align-items: center;
+     width: 100%;
+     height: 250px;
+     background-color: rgb(134, 134, 134);
+     clear: both;
+ }
+
+ .DivTrabalho {
+     background-color: white;
+     margin: 10px;
+     width: 120px;
+     height: 90%;
+     max-height: 90%;
+     text-align: center;
+     border-radius: 15px;
+     padding-top: 10%;
+ }
+
+ .DivTrabalho:nth-child(1) {
+     margin-left: 20px;
+ }
+
+ .scroll-horizontal {
+     overflow: hidden;
+     overflow-x: scroll;
+     scroll-snap-type: x mandatory;
+     display: grid;
+     grid-auto-flow: column;
+     justify-content: flex-start;
+ }
+
+ .scroll-vertical {
+     overflow: hidden;
+     overflow: auto;
+     scroll-snap-type: y mandatory;
+     display: table-row;
+     grid-auto-flow: column;
+     justify-content: flex-start;
+ }
+
+ /* ......../ media query /.......... */
+ @media (min-width:2560px) {
+     .LocalHorario {
+         width: 73%;
+         height: 400px;
+         float: left;
+         background-color: rgb(134, 134, 134);
+         margin-bottom: 2%;
+     }
+
+     .LocalLembretes {
+         width: 25%;
+         height: 400px;
+         float: right;
+         background-color: rgb(134, 134, 134);
+     }
+
+     .LocalAtividades {
+         align-items: center;
+         width: 100%;
+         height: 350px;
+         background-color: lightgray;
+         clear: both;
+     }
+
+     .DivTrabalho {
+         background-color: white;
+         margin: 10px;
+         width: 180px;
+         height: 90%;
+         text-align: center;
+         float: left;
+         border-radius: 15px;
+         padding-top: 30%;
+         font-size: 25px;
+     }
+ }
+
+ @media (max-width:1024px) {
+     .LocalHorario {
+         width: 73%;
+         height: 200px;
+         float: left;
+         background-color: rgb(134, 134, 134);
+         margin-bottom: 2%;
+     }
+
+     .LocalLembretes {
+         width: 25%;
+         height: 200px;
+         float: right;
+         background-color: rgb(134, 134, 134);
+     }
+
+     .LocalAtividades {
+         align-items: center;
+         width: 100%;
+         height: 200px;
+         background-color: lightgray;
+         clear: both;
+     }
+
+     .DivTrabalho {
+         background-color: white;
+         margin: 10px;
+         width: 120px;
+         height: 90%;
+         text-align: center;
+         float: left;
+         border-radius: 15px;
+         padding-top: 30%;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .conteudo {
+         padding-top: 20%;
+     }
+
+     .LocalHorario {
+         width: 63%;
+         height: 180px;
+         float: left;
+         background-color: rgb(134, 134, 134);
+         margin-bottom: 2%;
+     }
+
+     .LocalLembretes {
+         width: 35%;
+         height: 180px;
+         float: right;
+         background-color: rgb(134, 134, 134);
+     }
+
+     .LocalAtividades {
+         align-items: center;
+         width: 100%;
+         height: 180px;
+         background-color: lightgray;
+         clear: both;
+     }
+
+     .DivTrabalho {
+         background-color: white;
+         margin: 10px;
+         width: 120px;
+         height: 90%;
+         padding-top: 25%;
+         text-align: center;
+         float: left;
+         border-radius: 15px;
+
+     }
+ }
+
+ @media (max-width: 425px) {
+
+     .LocalHorario {
+         width: 63%;
+         height: 150px;
+         float: left;
+         background-color: rgb(134, 134, 134);
+         margin-bottom: 2%;
+     }
+
+     .LocalLembretes {
+         width: 35%;
+         height: 150px;
+         float: right;
+         background-color: rgb(134, 134, 134);
+     }
+
+     .LocalAtividades {
+         align-items: center;
+         width: 100%;
+         height: 200px;
+     }
+
+     .DivTrabalho {
+         width: 120px;
+         height: 90%;
+     }
+
+ }
+
+ @media (max-width: 430px) {
+     .DivTrabalho {
+         width: 120px;
+         height: 90%;
+         padding-top: 10%;
+         margin-bottom: 10%;
+         text-align: center;
+         float: left;
+         border-radius: 15px;
+     }
+
+     .LocalAtividades {
+         align-items: center;
+         width: 100%;
+         height: 160px;
+     }
+
+     .DivLembretes {
+         width: 100px;
+         height: 90%;
+         white-space: nowrap;
+         text-overflow: ellipsis;
+     }
+ }
